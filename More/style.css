@@ -1,0 +1,36 @@
+#popup {
+    background-color:#fff;
+    border-radius:15px;
+    color:#000;
+    display:none;
+    padding:20px;
+    min-width:400px;
+    min-height: 180px;
+}
+
+.imageholder{
+    
+    text-align:center;
+    margin-top:15px;
+    
+}
+
+
+.button {
+    color:#fff;
+    cursor:pointer;
+    text-align:center;
+    background-color:#2b91af;
+    
+    
+}
+
+.button.b-close, .button.bClose{
+    border-radius:7px
+    box-shadow:none;
+    padding:0 6px 2px
+    position:absolute;
+    right:-7px;
+    top:-7px;
+
+}

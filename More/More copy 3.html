@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<HTML>
+
+
+<head>
+    
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="popup.js" type="text/javascript"></script>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+            window.onload=function(){
+          $('#show').on('click', function(){
+                        $('#popup').bPopup({
+                                           modalClose: true,
+                                           opacity: 0.6,
+                                           positionStyle:'fixed'
+                                           });
+                        });
+            }
+  
+      </script>  </head>
+
+
+
+<body>
+ 
+ <button id="show">POP IT UP</button><br>
+ <!-- Element to pop up -->
+        <div id="popup">
+     <span class="button b-close">x</span>
+     <div class="imageholder"><img src="XboxOne.jpg"/></div>
+        </div>
+ 
+ 
+</body>
+
+
+</HTML>
+
+

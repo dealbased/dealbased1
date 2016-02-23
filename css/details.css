@@ -1,0 +1,21 @@
+
+
+
+.clearfix {
+    clear:both;
+}
+
+.featured_image, .product_content {
+    float:left;
+}
+
+input[type="submit"] {
+    background: red;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: .7em 2em;
+    margin: 2em 0 0 0;
+    cursor: pointer;
+    float: right;
+}

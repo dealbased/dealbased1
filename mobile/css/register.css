@@ -1,0 +1,169 @@
+I/**
+* @name generate-centered-widths
+* Generates media queries for centering a certain amount of items by setting the item container's width.
+* Loops through the maxNumberOfItems variable, starting at the increment variable
+*
+* @param maxNumberOfItems {number} max number of items you want to loop through
+* @param itemWidth {px} individual width of each item
+* @param increment {number} increments each loop, used as the start point
+* @param itemContainerPadding {px} the padding of the items container, to be used in the max width
+**/
+h2 span {
+  font-weight: normal;
+}
+h1 {
+  margin: 0;
+}
+hr {
+  margin-bottom: 20px;
+}
+.icon {
+  float: left;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.icon.tooltip-trigger {
+  float: none;
+  margin-top: 0;
+}
+#PaymentMainContainer {
+  margin-top: 20px;
+}
+#PurchaseSummary {
+  padding-bottom: 0;
+}
+#PurchaseSummary dt {
+  font-weight: bold;
+}
+#PurchaseSummary .item {
+  width: 200px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#PurchaseSummary .price {
+  float: right;
+}
+#PurchaseSummary .total {
+  font: 14px/17px Arial, Verdana, sans-serif;
+  border-top: 1px solid #cccccc;
+  font-weight: bold;
+  text-align: right;
+}
+.purchase-form {
+  list-style: none;
+  padding: 0;
+}
+.purchase-form a {
+  color: #000066;
+}
+.purchase-form a:hover {
+  color: #2078ef;
+}
+.purchase-form > li {
+  margin-top: 15px;
+  overflow: hidden;
+}
+.purchase-form > li.category {
+  margin: 0 0 20px;
+}
+.purchase-form > li.category label {
+  font-weight: normal;
+}
+.purchase-form > li > label {
+  float: left;
+  font-weight: normal;
+  text-align: right;
+  width: 120px;
+  margin-top: 3px;
+}
+.purchase-form .form-section {
+  float: right;
+  width: 420px;
+}
+.purchase-form .form-section label {
+  clear: both;
+}
+.purchase-form input[type=text],
+.purchase-form textarea {
+  width: 410px;
+}
+.purchase-form p {
+  clear: both;
+  margin: 5px 0 0;
+  width: 410px;
+}
+.purchase-form p.message {
+  color: #666666;
+}
+.purchase-form p.message strong {
+  color: #000000;
+}
+.purchase-form .error-message {
+  clear: both;
+  display: block;
+}
+#PayPalMethod {
+  padding: 0 20px;
+}
+#PayPalMethod label {
+  font: 14px/17px Arial, Verdana, sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#PayPalMethod #ppsubmit {
+  border: none;
+  cursor: pointer;
+  text-indent: -3000;
+}
+.container-forms {
+  position: relative;
+}
+#CancelPaymentLink {
+  color: #000066;
+  font: 13px/16px Arial, Verdana, sans-serif;
+}
+#CancelPaymentLink:hover {
+  color: #2078ef;
+}
+/* Style tweaks to fields in order to match comp */
+#CardHolderName {
+  width: 240px;
+}
+#FirstName {
+    width: 150px;
+}
+
+#LastName {
+    width: 150px;
+
+#EmailAddress {
+  width: 150px;
+ }
+
+#CreditCardNumber {
+    width: 164px;
+    float: left;
+}
+
+#SecurityCode {
+  width: 44px;
+}
+#PostalCode {
+    width: 50px;
+}
+ 
+
+#Remember + label {
+  font-weight: bold;
+}
+.cc-number {
+  line-height: 22px;
+  float: left;
+}
+.why-insertion-fee {
+  font: 13px/16px Arial, Verdana, sans-serif;
+}
+.why-insertion-fee hr {
+  margin: 20px 0;
+}
