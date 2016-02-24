@@ -15,6 +15,22 @@
 <!--Shortcut icon-->
     <link rel="stylesheet" href="colorbox.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    
+    <!-- jqeury accordion UI & script to add collapse/expand feature-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script>
+      $(function() {
+        $( "#accordion" ).accordion({
+            heightStyle: "content",
+            active: false,
+            collapsible: true
+        });
+      });
+      </script>
+      
     <script src="jquery.colorbox.js"></script>
     <script>
     $(document).ready(function(){
