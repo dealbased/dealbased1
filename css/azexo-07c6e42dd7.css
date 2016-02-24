@@ -7650,3 +7650,34 @@ button.wc-bookings-booking-form-button[type="submit"]:focus {
   vertical-align: top;
   height: 100%;
 }
+
+
+.container.active-sidebar #primary #user-profile .col-1 {
+  width:30%;
+  float: left;
+}
+
+.container.active-sidebar #primary #user-profile .col-2 {
+  width:70%;
+  float: right;
+}
+
+.container.active-sidebar #primary #tabs{
+    text-align: left;
+}
+
+#tabs .ui-widget-header{
+    background: none;
+    border:none;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+#user-profile-image{
+    display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
