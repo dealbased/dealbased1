@@ -4,6 +4,7 @@ session_start();
     $password = "Qq03049835"; //"Qq03049835";
     $dbname = "dealldsx_dealers";
     $servername = "localhost";
+    include './local_connection.php';
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     // Check connection

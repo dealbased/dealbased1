@@ -5,6 +5,7 @@
     $username = "dealldsx_dealers";
     $password = "Qq03049835";
     $dbname = "dealldsx_dealers";
+    include './local_connection.php';
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     // Check connection
