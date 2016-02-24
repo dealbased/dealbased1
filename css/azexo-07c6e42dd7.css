@@ -193,7 +193,7 @@ body.archive.search.woocommerce header.page-header {
   table-layout: fixed;
 }
 .container.active-sidebar #primary {
-  width: 65%;
+  width: 100%;
   display: table-cell;
   vertical-align: top;
   height: 100%;
@@ -5040,12 +5040,6 @@ table.woo-vou-check-code .woo_vou_product_details h2 {
   font-size: 20px;
 }
 
-
-
-
-
-
-}
 .panel.purchased-deals .purchased-deals-wrapper .deals {
   color: #000;
   font-weight: 500;
@@ -7633,3 +7627,26 @@ button.wc-bookings-booking-form-button[type="submit"]:focus {
     background:none;
     border:none;
 }*/
+
+.container.active-sidebar #primary #custom-contact-form {
+  width: 100%;
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+}
+
+.container.active-sidebar #primary .col-1 {
+  width:55%;
+  /*padding-right: 5%;*/
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+}
+
+.container.active-sidebar #primary .col-2 {
+  width:35%;
+  padding-left: 5%;
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+}
