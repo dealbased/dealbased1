@@ -5,6 +5,7 @@
     $username = "dealldsx_dealers";
     $password = "Qq03049835";
     $dbname = "dealldsx_dealers";
+    include './local_connection.php';
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     // Check connection
@@ -60,22 +61,19 @@ Contact        </h1>
 <div class="vc_row wpb_row vc_row-fluid"><div class="row"><div class="h-padding-0 wpb_column vc_column_container vc_col-sm-12"><div class="wpb_wrapper"><div class="wpb_gmaps_widget wpb_content_element">
 <div class="wpb_wrapper">
 <div class="wpb_map_wraper">
-<iframe width="100%" height="standard" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180923.20573680187!2d18.431035300000026!3d44.88417339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c3ce74d1a2ad7%3A0xec92baaa82e344b0!2zR3JhZGHEjWFj!5e0!3m2!1sen!2sba!4v1430647606971&amp;t=m&amp;z=14&amp;output=embed"></iframe>		</div>
+    <?php 
+                   if(!empty($row['address'])){?>
+                <iframe width="100%" 
+                        height="standard" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRh-luFPocbBNGpLFz-LlzX37seaB1JZw&q=<?php echo $row['address'];?>">
+                                                        </iframe>
+                   <?php }else{echo "Location not available";} ?>
 </div>
 </div>
-
-
-
-
-<script>
-function initMap() {
-    var mapDiv = document.getElementById('map');
-    var map = new google.maps.Map(mapDiv, {
-                                  center: {lat: 44.540, lng: -78.546},
-                                  zoom: 8
-                                  });
-}
-</script>
+</div>
 
 
 
