@@ -440,8 +440,22 @@ product-cat-promo product-cat-travel product-tag-travel instock'>
 
 
             <div class='holder' style='width: 600px;margin: 0 auto;'>
+                <div style="width:180px; float: left;">
                 <div class='featured_image' style='width: 180px;'>
                     <img src="<?php echo $row['image_url'];?>" alt="" style="width:100%;">
+                </div>
+                
+                   <?php 
+                   if(!empty($row['address'])){?>
+                <iframe width="180" 
+                        height="standard" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRh-luFPocbBNGpLFz-LlzX37seaB1JZw&q=<?php echo $row['address'];?>">
+                                                        </iframe>
+                   <?php }else{echo "Location not available";} ?>
+                                                        
                 </div>
 
                 <div class='product_content' style=' width: 380px;padding-left: 20px;'>
@@ -509,8 +523,8 @@ echo nl2br($row["details"]);
             </h4>
 
 
-            <div data-role='popup' id='myPopup'>
-            </div>
+<!--            <div data-role='popup' id='myPopup'>
+            </div>-->
         </a>
 
         <div class='price-offer sale '>
@@ -575,7 +589,7 @@ echo nl2br($row["details"]);
 </a>
 
 
-<div data-role='popup' id='myPopup'>
+<!--<div data-role='popup' id='myPopup'>
 </a>
 <div style='display:none'>
     <div id='inline_content<?php echo $count;?>' style='padding:10px; background:#fff;'>
@@ -627,7 +641,7 @@ echo preg_replace('/\\r\\n/', "<br/>", $row["details"]);
 
 
 </div>
-</div>
+</div>-->
 
 </div>
 
