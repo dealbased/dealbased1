@@ -1,5 +1,5 @@
 <?php
-$live = false;
+$live = true;
 if(!$live){
         $username = "root"; //"dealldsx_dealers";
         $password = "root"; //"Qq03049835";
