@@ -1,6 +1,6 @@
 <?php
     
-    $connect = mysql_connect("localhost","root","1111") or die ("Couldn't connect!");
+    $connect = mysql_connect("localhost","dealldsx_dealers","Qq03049835") or die ("Couldn't connect!");
 //    $connect = mysql_connect("localhost","root","root") or die ("Couldn't connect!");
     mysql_select_db("dealldsx_dealers") or die ("Couldn't Find DB!");
     
