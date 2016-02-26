@@ -454,7 +454,7 @@ product-cat-promo product-cat-travel product-tag-travel instock'>
                     });
                     </script>
                     
-                    <a id="show_map_<?php echo $row['uid'] ?>"><u>Click to show map</u></a>
+                    <center><a id="show_map_<?php echo $row['uid'] ?>"><u>Click to show map</u></a></center>
                 
                    <?php 
                    if(!empty($row['address'])){?>
