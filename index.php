@@ -444,10 +444,21 @@ product-cat-promo product-cat-travel product-tag-travel instock'>
                 <div class='featured_image' style='width: 180px;'>
                     <img src="<?php echo $row['image_url'];?>" alt="" style="width:100%;">
                 </div>
+                    
+                    <script>
+                    $(function(){
+                        $("#map_<?php echo $row['uid'] ?>").hide();
+                        $("#show_map_<?php echo $row['uid'] ?>").click(function(){
+                            $("#map_<?php echo $row['uid'] ?>").show();
+                        });
+                    });
+                    </script>
+                    
+                    <a id="show_map_<?php echo $row['uid'] ?>"><u>Click to show map</u></a>
                 
                    <?php 
                    if(!empty($row['address'])){?>
-                <iframe width="180" 
+                <iframe id="map_<?php echo $row['uid'] ?>" width="180" 
                         height="standard" 
                         scrolling="no" 
                         marginheight="0" 
