@@ -258,7 +258,7 @@ clients online and drive them to your business</div></font>
 
 <div class="vc_row wpb_row vc_row-fluid container panel" style="
 margin-bottom: 15px;
-margin-top: 15px;>
+margin-top: 15px;">
                                                                 <div class="row">
                                                                     <div class="wpb_column vc_column_container vc_col-sm-3">
 
